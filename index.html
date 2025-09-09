@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎥 YouTube Downloader - Versi Bersih!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e66465, #9198e5);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 550px;
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        input {
+            width: 100%;
+            padding: 14px;
+            margin: 15px 0;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #e67e22;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #d35400;
+        }
+        .note {
+            background: #fef5e7;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 14px;
+            color: #d35400;
+        }
+        footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 YouTube/TikTok Downloader</h1>
+        <div class="note">
+            Tempel link YouTube, TikTok, Instagram, Twitter — langsung download tanpa iklan!
+        </div>
+
+        <form method="POST" action="/download">
+            <input type="text" name="url" placeholder="https://youtube.com/watch?v=..." required>
+            <button type="submit">⬇️ Download Sekarang</button>
+        </form>
+
+        <footer>
+            Dibuat untuk kenyamanan — tanpa iklan, tanpa tracking.
+        </footer>
+    </div>
+</body>
+</html>
